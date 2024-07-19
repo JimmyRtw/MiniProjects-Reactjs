@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  transition: all 400ms ease;
+}
+
+body{
+  user-select: none;
+  font-family: Poppins, Helvetica, sans-serif;
+  background-color: rgb(60, 80, 88);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust grid for responsiveness */
+  gap: 10px;
+}
+
+.product-container{
+  width: 20vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  background-color: gray;
+  margin: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.product-container:hover{
+  background-color: rgb(75, 75, 75);
+}
+
+.product-container img{
+  height: 110px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  background-color: rgb(191, 191, 191);
+}
+
+.prodcut-specs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.product-specs span{
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.45em;
+  width: auto;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0.103);
+  color: white;
+  font-weight: 300;
+}
+
+.product-details{
+  height: 150px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+
+.product-details span:first-child
+{
+  font-weight:500;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.product-details span:last-child{
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.page-container{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.page-container:hover{
+  background-color: rgba(211, 211, 211, 0.107);
+}
+
+.bottom-pagebar-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px; /* Optional: Set a max-width for the centered container */
+  padding: 0 20px; /* Optional: Add padding for spacing */
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+.page-active,.page-active:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+box-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;  
+  color: white;
+}

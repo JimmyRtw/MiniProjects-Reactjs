@@ -1,0 +1,43 @@
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container{
+  padding: 10px;
+  border: solid black 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+.row-container{
+  height: auto;
+  width: auto;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ele-container{
+  border: solid black 1px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.ele-container:hover{
+  background-color: rgb(180, 227, 180);
+}
+
+.none{
+  border: none;
+  height: 100px;
+  width: 100px;
+}
+
+.active,.active:hover{
+  background-color: darkgreen;
+}
